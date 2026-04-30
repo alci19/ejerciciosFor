@@ -1,7 +1,7 @@
 function generarTablas() {
     let contenedor = document.getElementById("contenedor"); 
     let contenido = "";
-    let numero = 5; //condicion del taller, se puede cambiar por cualquier numero 
+    let numero = document.getElementById("txtNumero").value; //condicion del taller, se puede cambiar por cualquier numero 
 
     contenido += `<h1>🌟 Tabla del ${numero} 🌟</h1>`;
     contenido += `<div class="tabla">`;

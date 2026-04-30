@@ -120,3 +120,95 @@ h1 {
         padding: 10px;
     }
 }
+/* Grupo de input */
+.input-group {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Caja de texto */
+.input-group input {
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 20px;
+    border: 3px solid #ff4081;
+    outline: none;
+    text-align: center;
+    width: 200px;
+    transition: all 0.2s ease;
+    font-family: 'Comic Neue', cursive;
+}
+
+/* Efecto focus (cuando haces clic) */
+.input-group input:focus {
+    border-color: #00bcd4;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .input-group input {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+/* LAYOUT CON LATERALES */
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 15px;
+    padding: 20px;
+    flex: 1;
+}
+
+/* PANELES */
+.panel {
+    background: #ffffffcc;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* TITULOS */
+.panel h2 {
+    color: #ff4081;
+    margin-bottom: 10px;
+}
+
+/* LISTA */
+.panel ul {
+    padding-left: 20px;
+}
+
+.panel li {
+    margin-bottom: 8px;
+}
+
+/* MENSAJE DESTACADO */
+.tip {
+    margin-top: 15px;
+    background: #fff3e0;
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+/* AJUSTE CONTENEDOR CENTRAL */
+.contenedor {
+    width: 100%;
+    max-width: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .panel {
+        text-align: center;
+    }
+}
