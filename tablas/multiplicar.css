@@ -1,0 +1,122 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo infantil */
+body {
+    font-family: 'Comic Neue', cursive;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Botón divertido */
+.btn-probar {
+    background: #ff4081;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 0 #c2185b;
+}
+
+/* Efecto presionado */
+.btn-probar:active {
+    transform: translateY(5px);
+    box-shadow: 0 0 0 #c2185b;
+}
+
+/* Contenedor */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Caja principal */
+.contenedor {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 25px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+
+    box-shadow: 0 10px 0 #ffd54f,
+                0 15px 25px rgba(0,0,0,0.2);
+}
+
+/* Título */
+h1 {
+    margin-bottom: 20px;
+    color: #ff4081;
+    font-size: 28px;
+}
+
+/* Tabla estilo tarjetas */
+.tabla {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+/* Cada fila */
+.tabla p {
+    background: #e1f5fe;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 20px;
+    transition: transform 0.2s;
+}
+
+/* Hover divertido */
+.tabla p:hover {
+    transform: scale(1.1);
+    background: #b3e5fc;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .btn-probar {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .tabla p {
+        font-size: 18px;
+    }
+}
+/* Footer */
+.footer {
+    background: #ff4081;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 16px;
+    margin-top: auto;
+    box-shadow: 0 -3px 10px rgba(0,0,0,0.2);
+}
+
+/* Versión infantil (opcional mejora) */
+.footer p {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
